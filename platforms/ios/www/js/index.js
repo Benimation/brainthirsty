@@ -34,6 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -45,5 +46,20 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+		
+		
+		
+		navigator.speechrecognizer.recognize(successCallback, failCallback, 5, "Cordova Speech Recognizer Plugin");
+		
+		function successCallback(results){
+			console.log("Results: " + results);
+		}
+		
+		function failCallback(error){
+			console.log("Error: " + error);
+		}
+		
+		
+		
     }
 };
