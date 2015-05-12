@@ -89,7 +89,7 @@
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
-    <plugin name="cordova-plugin-speech-recognizer-master" version="0.0.1" />
+    <plugin name="com.manueldeveloper.speech-recognizer" version="0.0.1" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
