@@ -7,18 +7,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "com.rjfun.cordova.plugin.iflyspeech": {
+    "org.apache.cordova.geolocation": {
         "source": {
             "type": "registry",
-            "id": "com.rjfun.cordova.plugin.iflyspeech"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "me.rahul.plugins.speechrecognition": {
-        "source": {
-            "type": "registry",
-            "id": "me.rahul.plugins.speechrecognition"
+            "id": "org.apache.cordova.geolocation"
         },
         "is_top_level": true,
         "variables": {}
@@ -27,19 +19,8 @@
         "source": {
             "type": "registry",
             "id": "com.phonegap.plugins.barcodescanner"
-        }
-    },
-    "com.phonegap.plugins.speech": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/poiuytrez/SpeechRecognizer",
-            "subdir": "."
-        }
-    },
-    "org.apache.cordova.geolocation": {
-        "source": {
-            "type": "registry",
-            "id": "org.apache.cordova.geolocation"
-        }
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

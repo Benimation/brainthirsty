@@ -34,77 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		
-		
-		
-		
-		
-		
-		/* Geolocation
-		var onSuccess = function(position) {
-			alert('Latitude: '          + position.coords.latitude          + '\n' +
-				  'Longitude: '         + position.coords.longitude         + '\n' +
-				  'Altitude: '          + position.coords.altitude          + '\n' +
-				  'Accuracy: '          + position.coords.accuracy          + '\n' +
-				  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-				  'Heading: '           + position.coords.heading           + '\n' +
-				  'Speed: '             + position.coords.speed             + '\n' +
-				  'Timestamp: '         + position.timestamp                + '\n');
-		};
-		
-		// onError Callback receives a PositionError object
-		//
-		function onError(error) {
-			alert('code: '    + error.code    + '\n' +
-				  'message: ' + error.message + '\n');
-		}
-		
-		navigator.geolocation.getCurrentPosition(onSuccess, onError); */
-		
-		
-		
-		// barcode scan
-		cordova.plugins.barcodeScanner.scan(
-			function (result) {
-				alert("We got a barcode\n" +
-					  "Result: " + result.text + "\n" +
-					  "Format: " + result.format + "\n" +
-					  "Cancelled: " + result.cancelled);
-			}, 
-			function (error) {
-				alert("Scanning failed: " + error);
-			}
-		 );
-		
-		/* Speech Recognition
-		function luister() {
-			var maxMatches = 5;
-			var promptString = "Speak now"; // optional
-			var language = "en-US";                     // optional
-			navigator.speechrecognizer.startRecognize(function(result){
-				alert(result);
-			}, function(errorMessage){
-				console.log("Error message: " + errorMessage);
-			}, maxMatches, promptString, language);
-			
-		}
-		
-		luister();*/
-		/*function successCallback(results){
-			console.log("Results: " + results);
-		}
-		
-		function failCallback(error){
-			console.log("Error: " + error);
-		}
-		
-		navigator.speechrecognizer.recognize(successCallback, failCallback, 5, "Cordova Speech Recognizer Plugin");*/
-		
-		
-		
-		
-		
-		
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -116,6 +45,85 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
-		
     }
 };
+
+
+
+
+
+
+// Pages
+function initButtons() {
+	$("#newproject").click(function(e) {
+		$("#container").load("pages/newproject.html", function() { initButtons(); });
+		$("#menu").css("display", "none");
+		$("#back").css("display", "block");
+    	
+	});
+	
+	$("#newproject-confirm").click(function(e) {
+		$("#container").load("pages/showQR.html", function() { initButtons(); });
+    	
+	});
+	
+}
+
+// Home
+$("#container").load("pages/home.html", function(e) { 
+	initButtons();
+	
+});
+
+
+
+// New Project
+
+
+
+// Geolocation
+var onSuccess = function(position) {
+	alert('Latitude: '          + position.coords.latitude          + '\n' +
+		  'Longitude: '         + position.coords.longitude         + '\n' +
+		  'Altitude: '          + position.coords.altitude          + '\n' +
+		  'Accuracy: '          + position.coords.accuracy          + '\n' +
+		  'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+		  'Heading: '           + position.coords.heading           + '\n' +
+		  'Speed: '             + position.coords.speed             + '\n' +
+		  'Timestamp: '         + position.timestamp                + '\n');
+};
+
+// onError Callback receives a PositionError object
+//
+function onError(error) {
+	alert('code: '    + error.code    + '\n' +
+		  'message: ' + error.message + '\n');
+}
+
+$("#menu").click(function(e) {
+	navigator.geolocation.getCurrentPosition(onSuccess, onError);
+    
+});
+
+/* barcode scan
+cordova.plugins.barcodeScanner.scan(
+	function (result) {
+		alert("We got a barcode\n" +
+			  "Result: " + result.text + "\n" +
+			  "Format: " + result.format + "\n" +
+			  "Cancelled: " + result.cancelled);
+	}, 
+	function (error) {
+		alert("Scanning failed: " + error);
+	}
+); */
+
+
+
+/* barcode create
+cordova.plugins.barcodeScanner.encode(cordova.plugins.barcodeScanner.Encode.TEXT_TYPE, "Benimation", function(success) {
+	alert("encode success: " + success);
+  }, function(fail) {
+	alert("encoding failed: " + fail);
+  }
+); */

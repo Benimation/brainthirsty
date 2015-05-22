@@ -15,34 +15,26 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- hoi
  */
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html, body {
+	height: 100%;
+	
 }
 
 body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-   background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
+    background-color:#e3e3e3;
     background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:100%;
     margin:0px;
     padding:0px;
-    text-transform:uppercase;
     width:100%;
 }
 
@@ -58,9 +50,6 @@ body {
     padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
     margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
-	
-	transition: 1s padding ease-in-out, 1s background-position ease-in-out, 1s margin ease-in-out;\
-	
 }
 
 /* Landscape layout (with min-width) */
@@ -78,7 +67,7 @@ h1 {
     font-weight:normal;
     margin:0px;
     overflow:visible;
-    padding:20px 0px 20px 0px;
+    padding:0px;
     text-align:center;
 }
 
@@ -119,25 +108,53 @@ h1 {
 }
 
 
-.sensorenUl{
-	color: #a3a3a3;	
+
+/* menu */
+#menu, #back {
+	font-size: 32px;
+	margin: 8px;
+	
 }
 
-.sensorenUl{
-	list-style-type: none;
-	padding: 20px;
-	font-size: 3em;
+#back {
+	display: none;
+	
+}
+
+#container {
 	text-align: center;
+	
 }
 
-.sensorenUl > li{
-	padding: 5px;
-}
-
-#sensorenlink{
+.button {
+	color: white;
+	background-color: #ed6472;
+	padding: 8px;
+	font-size: 20px;
 	display: inline-block;
-	margin-top: 20px;
-	font-size: 2em;
-	padding: 20px;	
-	text-decoration: none;
+	width: 85%;
+	
+}
+
+.of {
+	margin-top: 64px;
+	margin-bottom: 64px;
+	color: #8e8787;
+	display: block;
+	font-size: 20px;
+	
+}
+
+.input {
+	width: 80%;
+	margin: 0;
+	margin-bottom: 32px;
+	border: none;
+	padding: 8px;
+	
+}
+
+.input:focus {
+	outline: none;
+	
 }

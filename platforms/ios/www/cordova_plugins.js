@@ -34,30 +34,14 @@ module.exports = [
         "clobbers": [
             "cordova.plugins.barcodeScanner"
         ]
-    },
-    {
-        "file": "plugins/com.rjfun.cordova.plugin.iflyspeech/www/speech.js",
-        "id": "com.rjfun.cordova.plugin.iflyspeech.speech",
-        "clobbers": [
-            "navigator.speech"
-        ]
-    },
-    {
-        "file": "plugins/me.rahul.plugins.speechrecognition/www/SpeechRecognition.js",
-        "id": "me.rahul.plugins.speechrecognition.SpeechRecognition",
-        "clobbers": [
-            "window.speechrecognition"
-        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-whitelist": "1.0.1-dev",
+    "cordova-plugin-whitelist": "1.0.0",
     "org.apache.cordova.geolocation": "0.3.12",
-    "com.phonegap.plugins.barcodescanner": "2.0.1",
-    "com.rjfun.cordova.plugin.iflyspeech": "0.0.2",
-    "me.rahul.plugins.speechrecognition": "0.0.1"
+    "com.phonegap.plugins.barcodescanner": "2.0.1"
 }
 // BOTTOM OF METADATA
 });
