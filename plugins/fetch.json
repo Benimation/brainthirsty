@@ -6,5 +6,40 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.rjfun.cordova.plugin.iflyspeech": {
+        "source": {
+            "type": "registry",
+            "id": "com.rjfun.cordova.plugin.iflyspeech"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "me.rahul.plugins.speechrecognition": {
+        "source": {
+            "type": "registry",
+            "id": "me.rahul.plugins.speechrecognition"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.phonegap.plugins.barcodescanner": {
+        "source": {
+            "type": "registry",
+            "id": "com.phonegap.plugins.barcodescanner"
+        }
+    },
+    "com.phonegap.plugins.speech": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/poiuytrez/SpeechRecognizer",
+            "subdir": "."
+        }
+    },
+    "org.apache.cordova.geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.geolocation"
+        }
     }
 }

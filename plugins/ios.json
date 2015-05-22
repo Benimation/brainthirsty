@@ -12,6 +12,84 @@
                             "xml": "false",
                             "count": 1
                         }
+                    ],
+                    "AVFoundation.framework": [
+                        {
+                            "xml": "false",
+                            "count": 3
+                        },
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "AudioToolbox.framework": [
+                        {
+                            "xml": "false",
+                            "count": 2
+                        },
+                        {
+                            "xml": false,
+                            "count": 2
+                        }
+                    ],
+                    "CoreAudio.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "AddressBook.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "QuartzCore.framework": [
+                        {
+                            "xml": "false",
+                            "count": 2
+                        },
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libiconv.dylib": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "AssetsLibrary.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
+                    ],
+                    "CoreVideo.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
+                        }
                     ]
                 }
             },
@@ -20,6 +98,18 @@
                     "/*": [
                         {
                             "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Speech\"><param name=\"ios-package\" value=\"CDVSpeech\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SpeechRecognition\"><param name=\"ios-package\" value=\"SpeechRecognition\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -41,10 +131,16 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
-        "com.manueldeveloper.speech-recognizer": {
+        "org.apache.cordova.geolocation": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
-        "org.apache.cordova.geolocation": {
+        "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "com.rjfun.cordova.plugin.iflyspeech": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "me.rahul.plugins.speechrecognition": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

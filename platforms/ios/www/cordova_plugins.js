@@ -1,13 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.manueldeveloper.speech-recognizer/www/speechrecognizer.js",
-        "id": "com.manueldeveloper.speech-recognizer.speechrecognizer",
-        "clobbers": [
-            "navigator.speechrecognizer"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.geolocation/www/Coordinates.js",
         "id": "org.apache.cordova.geolocation.Coordinates",
         "clobbers": [
@@ -34,14 +27,37 @@ module.exports = [
         "clobbers": [
             "navigator.geolocation"
         ]
+    },
+    {
+        "file": "plugins/com.phonegap.plugins.barcodescanner/www/barcodescanner.js",
+        "id": "com.phonegap.plugins.barcodescanner.BarcodeScanner",
+        "clobbers": [
+            "cordova.plugins.barcodeScanner"
+        ]
+    },
+    {
+        "file": "plugins/com.rjfun.cordova.plugin.iflyspeech/www/speech.js",
+        "id": "com.rjfun.cordova.plugin.iflyspeech.speech",
+        "clobbers": [
+            "navigator.speech"
+        ]
+    },
+    {
+        "file": "plugins/me.rahul.plugins.speechrecognition/www/SpeechRecognition.js",
+        "id": "me.rahul.plugins.speechrecognition.SpeechRecognition",
+        "clobbers": [
+            "window.speechrecognition"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.0.1-dev",
-    "com.manueldeveloper.speech-recognizer": "0.0.1",
-    "org.apache.cordova.geolocation": "0.3.12"
+    "org.apache.cordova.geolocation": "0.3.12",
+    "com.phonegap.plugins.barcodescanner": "2.0.1",
+    "com.rjfun.cordova.plugin.iflyspeech": "0.0.2",
+    "me.rahul.plugins.speechrecognition": "0.0.1"
 }
 // BOTTOM OF METADATA
 });
