@@ -9,9 +9,9 @@
         <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
     </feature>
     <allow-intent href="market:*" />
-    <name>Hello World</name>
+    <name>Brainthirsty</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Supercoole app van Ben en Thomas.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team

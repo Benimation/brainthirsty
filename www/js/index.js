@@ -53,6 +53,14 @@ var app = {
 
 
 
+// connectie grote boze buitenwereld
+$.getJSON("http://benimation.nl/brainthirsty/gettest.php?test=jamuder", function(data) {
+	alert(data);
+	
+});
+
+
+
 // Pages
 function initButtons() {
 	$("#newproject").click(function(e) {

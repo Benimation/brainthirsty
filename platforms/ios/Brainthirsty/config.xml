@@ -22,9 +22,9 @@
     </feature>
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-    <name>Hello World</name>
+    <name>Brainthirsty</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Supercoole app van Ben en Thomas.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
@@ -43,7 +43,7 @@
     <preference name="show-splash-screen-spinner" value="true" />
     <preference name="auto-hide-splash-screen" value="true" />
     <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-minSdkVersion" value="10" />
     <preference name="android-installLocation" value="auto" />
     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
