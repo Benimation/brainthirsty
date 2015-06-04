@@ -37,14 +37,15 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
+        /* var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
         listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        receivedElement.setAttribute('style', 'display:block;'); */
 
         console.log('Received Event: ' + id);
+		
     }
 };
 
@@ -53,15 +54,15 @@ var app = {
 
 
 
-/* connectie grote boze buitenwereld
-$.getJSON("http://benimation.nl/brainthirsty/gettest.php", function(data) {
-	alert(data);
+// connectie grote boze buitenwereld
+$.getJSON("http://benimation.nl/brainthirsty/gettest.php?test=jamuder", function(data) {
+	//alert(data);
 	
-});*/
+});
 
 
 
-// Pages
+/* Pages
 function initButtons() {
 	$("#newproject").click(function(e) {
 		$("#container").load("pages/newproject.html", function() { initButtons(); });
@@ -75,17 +76,33 @@ function initButtons() {
     	
 	});
 	
-}
+} */
 
-// Home
-$("#container").load("pages/home.html", function(e) { 
-	initButtons();
+
+
+// First screen
+$(document).ready(function(e) {
+	setTimeout(function() {
+		$("#splash").css("opacity", "0");
+		
+		setTimeout(loadScreen1, 1000);
+		
+	}, 2000);
 	
+	
+	
+	function loadScreen1() {
+		$("#container").load("pages/home.html", function() {
+			$("#splash").css("display", "none");
+			$("#container").css("opacity", "1");
+			$("#topbar").css("opacity", "1");
+			$("#mainicon").css("opacity", "1");
+			
+		});
+		
+	}
+    
 });
-
-
-
-// New Project
 
 
 

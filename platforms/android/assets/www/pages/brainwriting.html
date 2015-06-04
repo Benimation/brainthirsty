@@ -1,0 +1,23 @@
+<div id="back"></div>
+
+<div id="ideas">
+<p class="big">Idee 1</p>
+<p id="idea">Hier komt het eerste idee te staan.</p>
+</div>
+
+<div class="button" id="postcombos">Volgende</div>
+
+<script>
+
+$("#back").click(function(e) {
+	$("#container").css("opacity", "0");
+	
+    setTimeout(function() {
+		$("#container").load("pages/forcecombine.html", function() {
+			$("#container").css("opacity", "1");
+			
+		});
+	}, 1000);
+	
+});
+</script>
