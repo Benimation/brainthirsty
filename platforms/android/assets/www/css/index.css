@@ -145,6 +145,15 @@ h1 {
 	
 }
 
+.big {
+	margin-top: 64px;
+	margin-bottom: 64px;
+	color: #000;
+	display: block;
+	font-size: 20px;
+	
+}
+
 .input {
 	width: 80%;
 	margin: 0;
@@ -156,5 +165,12 @@ h1 {
 
 .input:focus {
 	outline: none;
+	
+}
+
+.wordlist {
+	display: inline-block;
+	width: 30%;
+	list-style: none;
 	
 }

@@ -42,7 +42,13 @@
                             "xml": false,
                             "count": 1
                         }
-                    ]
+                    ],
+                    "ImageIO.framework": [],
+                    "MobileCoreServices.framework": [],
+                    "CoreGraphics.framework": [],
+                    "CoreImage.framework": [],
+                    "OpenGLES.framework": [],
+                    "GLKit.framework": []
                 }
             },
             "config.xml": {

@@ -61,7 +61,7 @@ $.getJSON("http://benimation.nl/brainthirsty/gettest.php?test=jamuder", function
 
 
 
-// Pages
+/* Pages
 function initButtons() {
 	$("#newproject").click(function(e) {
 		$("#container").load("pages/newproject.html", function() { initButtons(); });
@@ -75,13 +75,10 @@ function initButtons() {
     	
 	});
 	
-}
+} */
 
 // Home
-$("#container").load("pages/home.html", function(e) { 
-	initButtons();
-	
-});
+$("#container").load("pages/home.html");
 
 
 

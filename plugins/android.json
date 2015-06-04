@@ -53,10 +53,6 @@
                         {
                             "xml": "<uses-permission android:name=\"android.permission.FLASHLIGHT\" />",
                             "count": 1
-                        },
-                        {
-                            "xml": "<uses-feature android:name=\"android.hardware.camera\" android:required=\"false\" />",
-                            "count": 1
                         }
                     ]
                 }
