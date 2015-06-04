@@ -36,15 +36,15 @@ var app = {
         app.receivedEvent('deviceready');
 		
 		// fix iOS
-	var deviceType = (navigator.userAgent.match(/iPad/i))  == "ios" ? "ios" : (navigator.userAgent.match(/iPhone/i))  == "ios" ? "ios" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+	
 	
 	if (device.platform == "iOS") {
 		$("#topbar").css("padding-top", "12px");
 		$("#mainicon img").css("top", "21px");
+		$("body").addClass("ios");
 		
 	}
 	
-	alert(device.platform);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -112,6 +112,19 @@ $(document).ready(function(e) {
 		});
 		
 	}
+	
+	// home button
+	$("#mainicon").click(function(e) {
+		$("#container").css("opacity", "0");
+		
+		setTimeout(function() {
+			$("#container").load("pages/home.html", function() {
+				$("#container").css("opacity", "1");
+				
+			});
+		}, 1000);
+        
+    });
     
 });
 

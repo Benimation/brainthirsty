@@ -150,6 +150,11 @@ h1 {
 	
 }
 
+body.ios #back {
+	top: 12px;
+	
+}
+
 #container {
 	text-align: center;
 	transition: 200ms opacity ease-in-out;
@@ -205,6 +210,8 @@ h1 {
 	color: #8e8e8e;
 	height: 24px;
 	text-align: center;
+	font-size: 16px;
+	border-radius: 0;
 	
 }
 

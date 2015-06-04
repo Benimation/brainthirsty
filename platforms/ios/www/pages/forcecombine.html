@@ -27,8 +27,9 @@
 <div class="button bottom" id="postcombos">Post je combinaties</div>
 
 <script>
-if (combosubject != null) {
-	console.log(combosubject);
+$("#container").css("opacity", "1");
+
+if (combosubject != "") {
 	$("#wordlistone li").css("color", "rgba(0,0,0,0)");
 	$("#wordlistone > li#ownsubject").html(combosubject);
 	$("#wordlistone > li#ownsubject").css("color", "#8e8e8e");
@@ -58,4 +59,8 @@ $("#back").click(function(e) {
 	}, 1000);
 	
 });
+/*if (deviceType == "iOS") {
+	$("#back").addClass("backios");
+	
+}*/
 </script>

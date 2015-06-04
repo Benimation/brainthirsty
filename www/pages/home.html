@@ -4,7 +4,7 @@
 <div class="button" id="nosubject">Ik heb geen onderwerp</div>
 
 <script>
-var combosubject;
+var combosubject = "";
 
 $("#nosubject").click(function(e) {
 	$("#container").css("opacity", "0");
@@ -19,18 +19,23 @@ $("#nosubject").click(function(e) {
 });
 
 $("#withsubject").click(function(e) {
-	$("#container").css("opacity", "0");
-	
 	combosubject = $("#combosubject").val();
 	
-	console.log(combosubject);
-	
-    setTimeout(function() {
-		$("#container").load("pages/forcecombine.html", function() {
-			$("#container").css("opacity", "1");
-			
-		});
-	}, 1000);
+	if (combosubject != "") {
+		$("#container").css("opacity", "0");
+		
+		setTimeout(function() {
+			$("#container").load("pages/forcecombine.html", function() {
+				$("#container").css("opacity", "1");
+				
+			});
+		}, 1000);
+		
+	} else {
+		alert("Vul een onderwerp in");
+		combosubject = "";
+		
+	}
 	
 });
 </script>

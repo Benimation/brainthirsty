@@ -252,3 +252,137 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 
 2015-06-04 14:00:50.899 Brainthirsty[88069:701151] Resetting plugins due to page load.
 2015-06-04 14:00:50.965 Brainthirsty[88069:701151] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/F43460BD-55DC-4B2E-A069-2E364C32200F/Brainthirsty.app/www/index.html
+2015-06-04 14:40:00.045 Brainthirsty[89870:715830] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/886021F9-4092-4399-899A-D4782A12A1F8/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:40:00.099 Brainthirsty[89870:715830] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:40:00.099 Brainthirsty[89870:715830] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:40:00.101 Brainthirsty[89870:715830] Unlimited access to network resources
+2015-06-04 14:40:00.102 Brainthirsty[89870:715830] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:40:00.207 Brainthirsty[89870:715830] Resetting plugins due to page load.
+2015-06-04 14:40:00.267 Brainthirsty[89870:715830] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/0737D962-C020-476C-AB54-B7C939AF448E/Brainthirsty.app/www/index.html
+2015-06-04 14:40:27.915 Brainthirsty[90037:716590] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/DA334B55-561B-4DE8-806C-34A433B4FA07/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:40:28.020 Brainthirsty[90037:716590] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:40:28.020 Brainthirsty[90037:716590] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:40:28.022 Brainthirsty[90037:716590] Unlimited access to network resources
+2015-06-04 14:40:28.023 Brainthirsty[90037:716590] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:40:28.124 Brainthirsty[90037:716590] Resetting plugins due to page load.
+2015-06-04 14:40:28.183 Brainthirsty[90037:716590] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/E248B964-3B51-4C92-9F0E-6EF869A729BB/Brainthirsty.app/www/index.html
+2015-06-04 14:41:04.991 Brainthirsty[90204:717292] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/617C4CB4-E714-463A-825B-8F4FD3AFF33D/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:41:05.097 Brainthirsty[90204:717292] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:41:05.098 Brainthirsty[90204:717292] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:41:05.099 Brainthirsty[90204:717292] Unlimited access to network resources
+2015-06-04 14:41:05.100 Brainthirsty[90204:717292] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:41:05.201 Brainthirsty[90204:717292] Resetting plugins due to page load.
+2015-06-04 14:41:05.258 Brainthirsty[90204:717292] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/AB414D37-F3B6-4F53-8262-7325AD4FE4AA/Brainthirsty.app/www/index.html
+2015-06-04 14:45:11.974 Brainthirsty[90500:719050] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/931A473E-C598-4DA9-A644-C4D1DDFB78DC/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:45:12.092 Brainthirsty[90500:719050] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:45:12.092 Brainthirsty[90500:719050] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:45:12.093 Brainthirsty[90500:719050] Unlimited access to network resources
+2015-06-04 14:45:12.095 Brainthirsty[90500:719050] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:45:12.196 Brainthirsty[90500:719050] Resetting plugins due to page load.
+2015-06-04 14:45:12.255 Brainthirsty[90500:719050] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/4DACA562-DE41-44CB-9F22-FED439E45D34/Brainthirsty.app/www/index.html
+2015-06-04 14:46:05.423 Brainthirsty[90500:719050] Resetting plugins due to page load.
+2015-06-04 14:46:05.563 Brainthirsty[90500:719050] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/4DACA562-DE41-44CB-9F22-FED439E45D34/Brainthirsty.app/www/index.html
+2015-06-04 14:46:38.565 Brainthirsty[90500:719050] Resetting plugins due to page load.
+2015-06-04 14:46:38.664 Brainthirsty[90500:719050] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/4DACA562-DE41-44CB-9F22-FED439E45D34/Brainthirsty.app/www/index.html
+2015-06-04 14:49:38.577 Brainthirsty[90806:721229] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/0409F63C-D501-4963-8A37-31F166D70201/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:49:38.680 Brainthirsty[90806:721229] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:49:38.680 Brainthirsty[90806:721229] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:49:38.681 Brainthirsty[90806:721229] Unlimited access to network resources
+2015-06-04 14:49:38.683 Brainthirsty[90806:721229] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:49:38.782 Brainthirsty[90806:721229] Resetting plugins due to page load.
+2015-06-04 14:49:38.842 Brainthirsty[90806:721229] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/5F7D424B-3989-4C92-BABC-DF34CC017EEB/Brainthirsty.app/www/index.html
+2015-06-04 14:50:53.229 Brainthirsty[90997:722178] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/FBF79E50-63A8-4297-8369-978253741ADE/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:50:53.330 Brainthirsty[90997:722178] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:50:53.330 Brainthirsty[90997:722178] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:50:53.331 Brainthirsty[90997:722178] Unlimited access to network resources
+2015-06-04 14:50:53.333 Brainthirsty[90997:722178] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:50:53.431 Brainthirsty[90997:722178] Resetting plugins due to page load.
+2015-06-04 14:50:53.491 Brainthirsty[90997:722178] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/C6EF8A09-7C8C-452D-BC6E-F42AC4FCE083/Brainthirsty.app/www/index.html
+2015-06-04 14:51:56.535 Brainthirsty[90997:722178] Resetting plugins due to page load.
+2015-06-04 14:51:56.670 Brainthirsty[90997:722178] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/C6EF8A09-7C8C-452D-BC6E-F42AC4FCE083/Brainthirsty.app/www/index.html
+2015-06-04 14:53:45.954 Brainthirsty[91243:723583] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/8884B586-A636-4EC2-A85D-89DE83D48B36/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:53:46.077 Brainthirsty[91243:723583] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:53:46.077 Brainthirsty[91243:723583] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:53:46.078 Brainthirsty[91243:723583] Unlimited access to network resources
+2015-06-04 14:53:46.080 Brainthirsty[91243:723583] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:53:46.182 Brainthirsty[91243:723583] Resetting plugins due to page load.
+2015-06-04 14:53:46.248 Brainthirsty[91243:723583] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/DEC888C0-0AB6-40D0-A9B7-495E7BCA01BB/Brainthirsty.app/www/index.html
+2015-06-04 14:54:05.602 Brainthirsty[91243:723583] Resetting plugins due to page load.
+2015-06-04 14:54:05.729 Brainthirsty[91243:723583] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/DEC888C0-0AB6-40D0-A9B7-495E7BCA01BB/Brainthirsty.app/www/index.html
+2015-06-04 14:55:00.741 Brainthirsty[91434:724507] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/3EEDF391-5AC2-4A2A-9608-03EE924A008E/Library/Cookies/Cookies.binarycookies
+2015-06-04 14:55:00.852 Brainthirsty[91434:724507] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 14:55:00.852 Brainthirsty[91434:724507] Multi-tasking -> Device: YES, App: YES
+2015-06-04 14:55:00.854 Brainthirsty[91434:724507] Unlimited access to network resources
+2015-06-04 14:55:00.855 Brainthirsty[91434:724507] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 14:55:00.954 Brainthirsty[91434:724507] Resetting plugins due to page load.
+2015-06-04 14:55:01.015 Brainthirsty[91434:724507] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/9284CCAA-AFF6-4270-8BC7-E84633B90AAC/Brainthirsty.app/www/index.html
+2015-06-04 15:04:10.410 Brainthirsty[91925:727262] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/6D574C24-32A0-4B34-908F-ACAC14183AD7/Library/Cookies/Cookies.binarycookies
+2015-06-04 15:04:10.521 Brainthirsty[91925:727262] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-04 15:04:10.522 Brainthirsty[91925:727262] Multi-tasking -> Device: YES, App: YES
+2015-06-04 15:04:10.523 Brainthirsty[91925:727262] Unlimited access to network resources
+2015-06-04 15:04:10.525 Brainthirsty[91925:727262] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-04 15:04:10.620 Brainthirsty[91925:727262] Resetting plugins due to page load.
+2015-06-04 15:04:10.680 Brainthirsty[91925:727262] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/A9D5846E-BF0E-4CB3-B68F-118AB905DA53/Brainthirsty.app/www/index.html
