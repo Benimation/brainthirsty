@@ -1,0 +1,36 @@
+<input class="input" id="combosubject" placeholder="Vul hier je onderwerp in" />
+<div class="button" id="withsubject">Bevestigen</div>
+<p class="of">- of -</p>
+<div class="button" id="nosubject">Ik heb geen onderwerp</div>
+
+<script>
+var combosubject;
+
+$("#nosubject").click(function(e) {
+	$("#container").css("opacity", "0");
+	
+    setTimeout(function() {
+		$("#container").load("pages/forcecombine.html", function() {
+			$("#container").css("opacity", "1");
+			
+		});
+	}, 1000);
+	
+});
+
+$("#withsubject").click(function(e) {
+	$("#container").css("opacity", "0");
+	
+	combosubject = $("#combosubject").val();
+	
+	console.log(combosubject);
+	
+    setTimeout(function() {
+		$("#container").load("pages/forcecombine.html", function() {
+			$("#container").css("opacity", "1");
+			
+		});
+	}, 1000);
+	
+});
+</script>
