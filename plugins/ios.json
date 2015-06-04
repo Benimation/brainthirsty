@@ -61,6 +61,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -85,6 +89,9 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

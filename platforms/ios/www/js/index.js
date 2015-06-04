@@ -34,6 +34,17 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		
+		// fix iOS
+	var deviceType = (navigator.userAgent.match(/iPad/i))  == "ios" ? "ios" : (navigator.userAgent.match(/iPhone/i))  == "ios" ? "ios" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+	
+	if (device.platform == "iOS") {
+		$("#topbar").css("padding-top", "12px");
+		$("#mainicon img").css("top", "21px");
+		
+	}
+	
+	alert(device.platform);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

@@ -15,6 +15,10 @@
                         {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"android-package\" value=\"com.phonegap.plugins.barcodescanner.BarcodeScanner\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -549,6 +553,9 @@
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-device": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },
