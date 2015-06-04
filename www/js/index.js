@@ -152,3 +152,8 @@ cordova.plugins.barcodeScanner.encode(cordova.plugins.barcodeScanner.Encode.TEXT
 	alert("encoding failed: " + fail);
   }
 ); */
+
+// fix iOS
+var deviceType = (navigator.userAgent.match(/iPad/i))  == "ios" ? "ios" : (navigator.userAgent.match(/iPhone/i))  == "ios" ? "ios" : (navigator.userAgent.match(/Android/i)) == "Android" ? "Android" : (navigator.userAgent.match(/BlackBerry/i)) == "BlackBerry" ? "BlackBerry" : "null";
+
+alert(deviceType);
