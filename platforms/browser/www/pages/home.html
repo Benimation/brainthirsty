@@ -1,4 +1,41 @@
-<textarea rows="4" cols="50" class="input" placeholder="Vul hier je onderwerp in"></textarea>
-<div class="button" id="newproject-confirm">Bevestigen</div>
+<textarea rows="4" cols="50" class="input" id="combosubject" placeholder="Vul hier je onderwerp in"></textarea>
+<div class="button" id="withsubject">Bevestigen</div>
 <p class="of">- of -</p>
-<div class="button" id="joinproject">Ik heb nog geen onderwerp</div>
+<div class="button" id="nosubject">Ik heb nog geen onderwerp</div>
+
+<script>
+var combosubject = "";
+
+$("#nosubject").click(function(e) {
+	$("#container").css("opacity", "0");
+	
+    setTimeout(function() {
+		$("#container").load("pages/forcecombine.html", function() {
+			$("#container").css("opacity", "1");
+			
+		});
+	}, 1000);
+	
+});
+
+$("#withsubject").click(function(e) {
+	combosubject = $("#combosubject").text();
+	
+	if (combosubject != "") {
+		$("#container").css("opacity", "0");
+		
+		setTimeout(function() {
+			$("#container").load("pages/forcecombine.html", function() {
+				$("#container").css("opacity", "1");
+				
+			});
+		}, 1000);
+		
+	} else {
+		alert("Vul een onderwerp in");
+		combosubject = "";
+		
+	}
+	
+});
+</script>
