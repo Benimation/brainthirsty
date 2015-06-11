@@ -9,7 +9,7 @@
     
 </ul>
 
-<ul class="wordlist">
+<ul class="wordlist" id="wordlisttwo">
 	<li>facebooken</li>
     <li>werken</li>
     <li>slapen</li>
@@ -29,6 +29,33 @@
 <script>
 $("#container").css("opacity", "1");
 
+
+// load words
+$.getJSON("../json/nouns.json", function(data) {
+	var nouns = [];
+	
+	$.each(data, function(key, val) {
+		nouns.push("<li id='noun" + key + "'>" + val + "</li>");
+		
+	});
+	  
+});
+
+$.getJSON("../json/verbs.json", function(data) {
+	var vers = [];
+	
+	$.each(data, function(key, val) {
+		verbs.push("<li id='noun" + key + "'>" + val + "</li>");
+		
+	});
+	  
+});
+
+$("#wordlistone").html(nouns);
+$("#wordlisttwo").html(verbs);
+$("#wordlistone:nth-child(3)").attr("id", "ownsubject");
+
+
 if (combosubject != "") {
 	$("#wordlistone li").css("color", "rgba(0,0,0,0)");
 	$("#wordlistone > li#ownsubject").html(combosubject);
@@ -36,6 +63,9 @@ if (combosubject != "") {
 	
 }
 
+
+
+// buttons
 $("#postcombos").click(function(e) {
 	$("#container").css("opacity", "0");
 	
