@@ -164,18 +164,17 @@ body.ios #back {
 
 .button {
 	color: #23a3ed;
-	  background-color: #fff;
-	  padding: 12px 8px;
-	  font-size: 20px;
-	  display: inline-block;
-	  width: 100%;
-	  font-weight: 400;
-	  background-image: url(../img/arrowright.png);
-	  background-repeat: no-repeat;
-	  background-position-x: right;
-	  background-size: contain;
-	  text-align: left;
-	  padding-left: 8%;
+	background-color: #fff;
+	padding: 12px 8%;
+	font-size: 20px;
+	display: inline-block;
+	width: 84%;
+	font-weight: 400;
+	background-image: url(../img/arrowright.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-size: contain;
+	text-align: left;
 	
 }
 
