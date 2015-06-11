@@ -132,17 +132,28 @@ hammertime.on("swipe", function(ev) {
 
 
 // buttons
-var savedcombos = [];
+displaycombos();
 $("#savecombo").click(function(e) {
-	savedcombos.push($("#wordlistone > li:nth-child(3)").text() + " " + $("#wordlisttwo > li:nth-child(3)").text());
-	
+	if (savedcombos.length <= 4) {
+		savedcombos.push($("#wordlistone > li:nth-child(3)").text() + " " + $("#wordlisttwo > li:nth-child(3)").text());
+		
+		displaycombos();
+		
+	} else {
+		alert("Maximaal 4 combinaties");
+		
+	}
+    
+});
+
+function displaycombos() {
 	$("#combos").empty();
 	$.each(savedcombos, function(key, val) {
 		$("#combos").append("<li>" + val + "</li>");
 		
 	});
-    
-});
+	
+}
 
 $("#postcombos").click(function(e) {
 	$("#container").css("opacity", "0");

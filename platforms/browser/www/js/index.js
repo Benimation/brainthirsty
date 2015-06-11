@@ -176,3 +176,6 @@ cordova.plugins.barcodeScanner.encode(cordova.plugins.barcodeScanner.Encode.TEXT
 	alert("encoding failed: " + fail);
   }
 ); */
+
+// combos
+var savedcombos = [];
