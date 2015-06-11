@@ -340,10 +340,14 @@ body.ios #back {
 	color: #8e8e8e;
 	font-size: 32px;
 	margin-bottom: 36px;
-	
+
 }
 
 .wordlist > li:nth-child(n+6) {
 	display: none;
 	
+}
+
+textarea {
+font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;	
 }
