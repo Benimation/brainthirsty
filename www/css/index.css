@@ -40,6 +40,11 @@ body {
     width:100%;
 }
 
+.ui-loader {
+	display: none!important;
+	
+}
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
