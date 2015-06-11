@@ -214,10 +214,11 @@ body.ios #back {
   color: #fff;
   height: auto;
   text-align: left;
-  font-size: 60px;
+  font-size: 55px;
   border-radius: 0;
   background: transparent;
     letter-spacing: 3px;
+	margin-bottom: 20px;
 }
 	
 }
