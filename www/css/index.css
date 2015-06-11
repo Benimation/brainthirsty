@@ -164,11 +164,11 @@ body.ios #back {
 
 .button {
 	color: white;
-	background-color: #ed6472;
+	background-color: #fff;
 	padding: 12px 8px;
 	font-size: 20px;
 	display: inline-block;
-	width: 85%;
+	width: 100%;
 	font-weight: 700;
 	background-image: url(../img/arrowright.png);
 	background-repeat: no-repeat;

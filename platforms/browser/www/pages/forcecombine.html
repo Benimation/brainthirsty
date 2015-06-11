@@ -35,13 +35,14 @@ $.getJSON("json/verbs.json", function(data) {
 	  
 });
 
-$("#wordlistone > li:nth-child(3)").attr("id", "ownsubject");
+console.log(combosubject);
+
 
 
 if (combosubject != "") {
 	$("#wordlistone li").css("color", "rgba(0,0,0,0)");
-	$("#wordlistone > li#ownsubject").html(combosubject);
-	$("#wordlistone > li#ownsubject").css("color", "#8e8e8e");
+	$("#wordlistone > li#noun2").html(combosubject);
+	$("#wordlistone > li#noun2").css("color", "#8e8e8e");
 	
 }
 
@@ -52,7 +53,11 @@ var savedcombos = [];
 $("#savecombo").click(function(e) {
 	savedcombos.push($("#wordlistone > li:nth-child(3)").text() + " " + $("#wordlisttwo > li:nth-child(3)").text());
 	
-	// hier was ik
+	$("#combos").empty();
+	$.each(savedcombos, function(key, val) {
+		$("#combos").append("<li>" + val + "</li>");
+		
+	});
     
 });
 
