@@ -46,6 +46,43 @@ $.getJSON("json/verbs.json", function(data) {
 
 
 
+// scroll words
+function scrollwords(kind) {
+	var times = 5 + Math.random() * 5;
+	
+	var scrollinterval = setInterval(function() {
+		$("#wordlisttwo > li:first").remove().insertAfter($("#wordlisttwo > li:last"));
+		
+		times--;
+		
+		if (times <= 0) {
+			clearInterval(scrollinterval);
+			
+		}
+		
+	}, 100);
+	
+	for (var i = 0; i < 5; i++) {
+		
+		
+	}
+	
+}
+
+$("#wordlisttwo").click(function(e) {
+	scrollwords("verbs");
+    
+});
+
+var hammertime = new Hammer("#wordlisttwo");
+hammertime.on('swipe', function(ev) {
+	scrollwords("verbs");
+    console.log(ev);
+	
+});
+
+
+
 // buttons
 var savedcombos = [];
 $("#savecombo").click(function(e) {

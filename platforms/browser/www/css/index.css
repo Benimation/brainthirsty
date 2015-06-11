@@ -205,7 +205,8 @@ body.ios #back {
 }
 
 .input {
-width: 100%;
+  width: 84%;
+  padding: 8%;
   margin: 0;
   border: none;
   margin-top: 40px;
@@ -214,8 +215,9 @@ width: 100%;
   text-align: left;
   font-size: 55px;
   border-radius: 0;
-  background: #2099de;
+  background: transparent;
   letter-spacing: 3px;
+  font-weight:300;
 }
 	
 
