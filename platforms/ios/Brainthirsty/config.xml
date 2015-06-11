@@ -32,9 +32,9 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
+    <preference name="orientation" value="portrait" />
     <content src="index.html" />
     <preference name="permissions" value="none" />
-    <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
