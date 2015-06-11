@@ -19,7 +19,7 @@ $("#nosubject").click(function(e) {
 });
 
 $("#withsubject").click(function(e) {
-	combosubject = $("#combosubject").contents();
+	combosubject = $("#combosubject").text();
 	
 	if (combosubject != "") {
 		$("#container").css("opacity", "0");
