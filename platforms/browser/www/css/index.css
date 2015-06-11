@@ -40,6 +40,11 @@ body {
     width:100%;
 }
 
+.ui-loader {
+	display: none!important;
+	
+}
+
 /* Portrait layout (default) */
 .app {
     background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
@@ -263,9 +268,12 @@ body.ios #back {
 }
 
 #combos li {
-	font-style: italic;
-	color: #8e8e8e;
-	font-size: 20px;
+	color: #fff;
+	  font-size: 20px;
+	  text-align: left;
+	  font-weight: 300;
+	  line-height: 30px;
+	  padding-left: 3%;
 	
 }
 

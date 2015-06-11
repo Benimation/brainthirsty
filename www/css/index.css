@@ -196,7 +196,7 @@ body.ios #back {
 	  display: block;
 	  font-size: 20px;
 	  text-align: left;
-	  padding-left: 8%;
+	  padding-left: 3%;
 	  font-weight: 300;
 	  background-color: #1a7ab2;
 		
@@ -268,9 +268,12 @@ body.ios #back {
 }
 
 #combos li {
-	font-style: italic;
-	color: #8e8e8e;
-	font-size: 20px;
+	color: #fff;
+	  font-size: 20px;
+	  text-align: left;
+	  font-weight: 300;
+	  line-height: 30px;
+	  padding-left: 3%;
 	
 }
 
