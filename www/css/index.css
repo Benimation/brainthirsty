@@ -31,7 +31,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#e3e3e3;
+    background-color:#23a3ed;
     background-attachment:fixed;
     font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -202,16 +202,18 @@ body.ios #back {
 
 .input {
 	width: 85%;
-	margin: 0;
-	margin-bottom: 4px;
-	border: none;
-	padding: 8px;
-	margin-top: 96px;
-	color: #8e8e8e;
-	height: 24px;
-	text-align: center;
-	font-size: 16px;
-	border-radius: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  border: none;
+  padding: 8px;
+  margin-top: 96px;
+  color: #fff;
+  height: auto;
+  text-align: left;
+  font-size: 60px;
+  border-radius: 0;
+  background: transparent;
+}
 	
 }
 
