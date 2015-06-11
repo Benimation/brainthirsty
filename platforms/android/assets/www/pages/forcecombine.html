@@ -1,22 +1,8 @@
 <div id="back"></div>
 
-<ul class="wordlist" id="wordlistone">
-	<li>tinder</li>
-    <li>bejaarden</li>
-    <li id="ownsubject">aansteker</li>
-    <li>hamburger</li>
-    <li>daglicht</li>
-    
-</ul>
+<ul class="wordlist" id="wordlistone"></ul>
 
-<ul class="wordlist" id="wordlisttwo">
-	<li>facebooken</li>
-    <li>werken</li>
-    <li>slapen</li>
-    <li>eten</li>
-    <li>trippen</li>
-    
-</ul>
+<ul class="wordlist" id="wordlisttwo"></ul>
 
 <div class="simple button" id="savecombo">Sla combinatie op</div>
 
@@ -31,41 +17,48 @@ $("#container").css("opacity", "1");
 
 
 // load words
-$.getJSON("../json/nouns.json", function(data) {
-	var nouns = [];
+var nouns = "";
+var verbs = "";
+$.getJSON("json/nouns.json", function(data) {
+	$.each(data[0], function(key, val) {
+		$("#wordlistone").append("<li id='noun" + key + "'>" + val + "</li>");
+		
+	});
 	
-	$.each(data, function(key, val) {
-		nouns.push("<li id='noun" + key + "'>" + val + "</li>");
+	console.log(combosubject);
+	
+	if (combosubject != "") {
+		$("#wordlistone li").css("color", "rgba(0,0,0,0)");
+		$("#wordlistone > li#noun2").html(combosubject);
+		$("#wordlistone > li#noun2").css("color", "#8e8e8e");
+		
+	}
+	  
+});
+
+$.getJSON("json/verbs.json", function(data) {
+	$.each(data[0], function(key, val) {
+		$("#wordlisttwo").append("<li id='noun" + key + "'>" + val + "</li>");
 		
 	});
 	  
 });
-
-$.getJSON("../json/verbs.json", function(data) {
-	var vers = [];
-	
-	$.each(data, function(key, val) {
-		verbs.push("<li id='noun" + key + "'>" + val + "</li>");
-		
-	});
-	  
-});
-
-$("#wordlistone").html(nouns);
-$("#wordlisttwo").html(verbs);
-$("#wordlistone:nth-child(3)").attr("id", "ownsubject");
-
-
-if (combosubject != "") {
-	$("#wordlistone li").css("color", "rgba(0,0,0,0)");
-	$("#wordlistone > li#ownsubject").html(combosubject);
-	$("#wordlistone > li#ownsubject").css("color", "#8e8e8e");
-	
-}
 
 
 
 // buttons
+var savedcombos = [];
+$("#savecombo").click(function(e) {
+	savedcombos.push($("#wordlistone > li:nth-child(3)").text() + " " + $("#wordlisttwo > li:nth-child(3)").text());
+	
+	$("#combos").empty();
+	$.each(savedcombos, function(key, val) {
+		$("#combos").append("<li>" + val + "</li>");
+		
+	});
+    
+});
+
 $("#postcombos").click(function(e) {
 	$("#container").css("opacity", "0");
 	

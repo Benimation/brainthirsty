@@ -31,7 +31,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#e3e3e3;
+    background-color:#23a3ed;
     background-attachment:fixed;
     font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -163,17 +163,19 @@ body.ios #back {
 }
 
 .button {
-	color: white;
-	background-color: #ed6472;
-	padding: 12px 8px;
-	font-size: 20px;
-	display: inline-block;
-	width: 85%;
-	font-weight: 700;
-	background-image: url(../img/arrowright.png);
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: contain;
+	color: #23a3ed;
+	  background-color: #fff;
+	  padding: 12px 8px;
+	  font-size: 20px;
+	  display: inline-block;
+	  width: 100%;
+	  font-weight: 400;
+	  background-image: url(../img/arrowright.png);
+	  background-repeat: no-repeat;
+	  background-position-x: right;
+	  background-size: contain;
+	  text-align: left;
+	  padding-left: 8%;
 	
 }
 
@@ -183,11 +185,13 @@ body.ios #back {
 }
 
 .of {
-	margin-top: 64px;
-	margin-bottom: 64px;
-	color: #8e8e8e;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #fff;
 	display: block;
 	font-size: 20px;
+	  text-align: left;
+  padding-left: 8%;
 	
 }
 
@@ -202,16 +206,19 @@ body.ios #back {
 
 .input {
 	width: 85%;
-	margin: 0;
-	margin-bottom: 4px;
-	border: none;
-	padding: 8px;
-	margin-top: 96px;
-	color: #8e8e8e;
-	height: 24px;
-	text-align: center;
-	font-size: 16px;
-	border-radius: 0;
+  margin: 0;
+  margin-bottom: 4px;
+  border: none;
+  padding: 8px;
+  margin-top: 40px;
+  color: #fff;
+  height: auto;
+  text-align: left;
+  font-size: 60px;
+  border-radius: 0;
+  background: transparent;
+    letter-spacing: 3px;
+}
 	
 }
 
@@ -333,5 +340,10 @@ body.ios #back {
 	color: #8e8e8e;
 	font-size: 32px;
 	margin-bottom: 36px;
+	
+}
+
+.wordlist > li:nth-child(n+6) {
+	display: none;
 	
 }
