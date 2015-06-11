@@ -164,16 +164,18 @@ body.ios #back {
 
 .button {
 	color: #23a3ed;
-	background-color: #fff;
-	padding: 12px 8px;
-	font-size: 20px;
-	display: inline-block;
-	width: 100%;
-	font-weight: 700;
-	background-image: url(../img/arrowright.png);
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: contain;
+	  background-color: #fff;
+	  padding: 12px 8px;
+	  font-size: 20px;
+	  display: inline-block;
+	  width: 100%;
+	  font-weight: 700;
+	  background-image: url(../img/arrowright.png);
+	  background-repeat: no-repeat;
+	  background-position-x: right;
+	  background-size: contain;
+	  text-align: left;
+	  padding-left: 8%;
 	
 }
 
@@ -183,8 +185,8 @@ body.ios #back {
 }
 
 .of {
-	margin-top: 64px;
-	margin-bottom: 64px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 	color: #8e8e8e;
 	display: block;
 	font-size: 20px;
@@ -206,7 +208,7 @@ body.ios #back {
   margin-bottom: 4px;
   border: none;
   padding: 8px;
-  margin-top: 96px;
+  margin-top: 40px;
   color: #fff;
   height: auto;
   text-align: left;
