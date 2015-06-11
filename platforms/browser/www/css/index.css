@@ -169,7 +169,7 @@ body.ios #back {
 	  font-size: 20px;
 	  display: inline-block;
 	  width: 100%;
-	  font-weight: 700;
+	  font-weight: 400;
 	  background-image: url(../img/arrowright.png);
 	  background-repeat: no-repeat;
 	  background-position-x: right;
@@ -187,9 +187,11 @@ body.ios #back {
 .of {
 	margin-top: 15px;
 	margin-bottom: 15px;
-	color: #8e8e8e;
+	color: #fff;
 	display: block;
 	font-size: 20px;
+	  text-align: left;
+  padding-left: 8%;
 	
 }
 
@@ -215,6 +217,7 @@ body.ios #back {
   font-size: 60px;
   border-radius: 0;
   background: transparent;
+    letter-spacing: 3px;
 }
 	
 }

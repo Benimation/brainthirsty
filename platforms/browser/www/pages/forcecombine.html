@@ -24,6 +24,15 @@ $.getJSON("json/nouns.json", function(data) {
 		$("#wordlistone").append("<li id='noun" + key + "'>" + val + "</li>");
 		
 	});
+	
+	console.log(combosubject);
+	
+	if (combosubject != "") {
+		$("#wordlistone li").css("color", "rgba(0,0,0,0)");
+		$("#wordlistone > li#noun2").html(combosubject);
+		$("#wordlistone > li#noun2").css("color", "#8e8e8e");
+		
+	}
 	  
 });
 
@@ -34,17 +43,6 @@ $.getJSON("json/verbs.json", function(data) {
 	});
 	  
 });
-
-console.log(combosubject);
-
-
-
-if (combosubject != "") {
-	$("#wordlistone li").css("color", "rgba(0,0,0,0)");
-	$("#wordlistone > li#noun2").html(combosubject);
-	$("#wordlistone > li#noun2").css("color", "#8e8e8e");
-	
-}
 
 
 
