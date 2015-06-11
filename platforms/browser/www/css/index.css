@@ -165,7 +165,7 @@ body.ios #back {
 .button {
 	color: #23a3ed;
 	background-color: #fff;
-	padding: 12px 8%;
+	padding: 20px 8%;
 	font-size: 20px;
 	display: inline-block;
 	width: 84%;
@@ -175,6 +175,7 @@ body.ios #back {
 	background-position-x: right;
 	background-size: contain;
 	text-align: left;
+	cursor: pointer;
 	
 }
 
@@ -204,23 +205,19 @@ body.ios #back {
 }
 
 .input {
-	width: 85%;
+width: 100%;
   margin: 0;
-  margin-bottom: 4px;
   border: none;
-  padding: 8px;
   margin-top: 40px;
   color: #fff;
   height: auto;
   text-align: left;
   font-size: 55px;
   border-radius: 0;
-  background: transparent;
-    letter-spacing: 3px;
-	margin-bottom: 20px;
+  background: #2099de;
+  letter-spacing: 3px;
 }
 	
-}
 
 .input:focus {
 	outline: none;
@@ -271,8 +268,8 @@ body.ios #back {
 
 .button.bottom {
 	position: absolute;
-	bottom: 16px;
-	left: 5%;
+  	bottom: 0px;
+  	left: 0;
 	
 }
 
@@ -324,7 +321,7 @@ body.ios #back {
 
 #splash h1 {
 	font-size: 48px;
-	color: #8e8e8e;
+	color: #fff;
 	font-weight: 700;
 	
 }
@@ -340,10 +337,14 @@ body.ios #back {
 	color: #8e8e8e;
 	font-size: 32px;
 	margin-bottom: 36px;
-	
+
 }
 
 .wordlist > li:nth-child(n+6) {
 	display: none;
 	
+}
+
+textarea {
+font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;	
 }
