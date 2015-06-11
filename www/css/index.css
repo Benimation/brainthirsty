@@ -170,10 +170,10 @@ body.ios #back {
 .button {
 	color: #23a3ed;
 	background-color: #fff;
-	padding: 20px 8%;
+	padding: 20px 3%;
 	font-size: 20px;
 	display: inline-block;
-	width: 84%;
+	width: 94%;
 	font-weight: 400;
 	background-image: url(../img/arrowright.png);
 	background-repeat: no-repeat;
