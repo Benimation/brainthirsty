@@ -74,8 +74,8 @@ $("#wordlisttwo").click(function(e) {
     
 });
 
-var hammertime = new Hammer("#wordlisttwo");
-hammertime.on('swipe', function(ev) {
+var hammertime = new Hammer(document.getElementById("wordlisttwo"));
+hammertime.on("swipe", function(ev) {
 	scrollwords("verbs");
     console.log(ev);
 	
