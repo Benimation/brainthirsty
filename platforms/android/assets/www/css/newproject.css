@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+#textcontainer{
+	width:100%;	
+}
+
 ::-webkit-input-placeholder {
    color: white;
 }

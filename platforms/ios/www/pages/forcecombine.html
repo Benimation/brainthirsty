@@ -6,9 +6,7 @@
 
 <div class="simple button" id="savecombo">Sla combinatie op</div>
 
-<ul id="combos">
-<li>idee1</li>
-</ul>
+<ul id="combos"></ul>
 
 <div class="button bottom" id="postcombos">Post je combinaties</div>
 
@@ -43,6 +41,93 @@ $.getJSON("json/verbs.json", function(data) {
 	});
 	  
 });
+
+
+
+// scroll words
+function scrollwords(kind, direction) {
+	var times = 5 + Math.random() * 5;
+	
+	var scrollinterval = setInterval(function() {
+		var whichlist = "";
+		switch (kind) {
+			case "verbs":
+				var whichlist = "two";
+				break;
+			case "nouns":
+				var whichlist = "one";
+				break;
+			default:
+				var whichlist = "two";
+				break;
+			
+		}
+		
+		switch (direction) {
+			case "up":
+				$("#wordlist" + whichlist + " > li:first").remove().insertAfter($("#wordlist" + whichlist + " > li:last"));
+				break;
+			case "down":
+				$("#wordlist" + whichlist + " > li:last").remove().insertBefore($("#wordlist" + whichlist + " > li:first"));
+				break;
+			default:
+				$("#wordlist" + whichlist + " > li:first").remove().insertAfter($("#wordlist" + whichlist + " > li:last"));
+				break;
+				
+		}
+		
+		times--;
+		
+		if (times <= 0) {
+			clearInterval(scrollinterval);
+			
+		}
+		
+	}, 100);
+	
+	for (var i = 0; i < 5; i++) {
+		
+		
+	}
+	
+}
+
+$("#wordlisttwo").click(function(e) {
+	scrollwords("verbs");
+    
+});
+
+$("#wordlisttwo").on("swipeup", function(e) {
+	scrollwords("verbs", "up");
+    
+});
+
+$("#wordlisttwo").on("swipedown", function(e) {
+	scrollwords("verbs", "down");
+    
+});
+
+$("#wordlistone").click(function(e) {
+	scrollwords("nouns");
+    
+});
+
+$("#wordlistone").on("swipeup", function(e) {
+	scrollwords("nouns", "up");
+    
+});
+
+$("#wordlistone").on("swipedown", function(e) {
+	scrollwords("nouns", "down");
+    
+});
+
+/*var hammertime = new Hammer(document.getElementById("wordlisttwo"));
+hammertime.on("swipe", function(ev) {
+	scrollwords("verbs");
+    console.log(ev);
+	
+});*/
 
 
 
