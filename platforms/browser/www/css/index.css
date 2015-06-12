@@ -198,7 +198,6 @@ body.ios #back {
 	  text-align: left;
 	  padding-left: 3%;
 	  font-weight: 300;
-	  background-color: #1a7ab2;
 		
 }
 
@@ -215,15 +214,17 @@ body.ios #back {
   width: 94%;
   padding: 3%;
   margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
   border: none;
   color: #fff;
   height: auto;
   text-align: left;
-  font-size: 55px;
+  font-size: 60px;
   border-radius: 0;
   background: transparent;
   letter-spacing: 3px;
-  font-weight:300;
+  font-weight: 300;
 }
 	
 
@@ -233,17 +234,17 @@ body.ios #back {
 }
 
 .wordlist {
-	display: inline-block;
-	width: 49%;
-	list-style: none;
-	background-color: #fff;
-	margin: 0;
-	padding: 6px 0;
-	font-size: 20px;
-	line-height: 35px;
-	color: #8e8e8e;
-	margin-bottom: 16px;
-	text-align: left;
+	  display: inline-block;
+  width: 49%;
+  list-style: none;
+  background-color: #1a7ab2;
+  margin: 0;
+  padding: 6px 0;
+  font-size: 20px;
+  line-height: 35px;
+  color: #fff;
+  text-align: left;
+  font-weight: 300;
 	
 }
 
@@ -253,12 +254,12 @@ body.ios #back {
 }
 
 .wordlist li:nth-child(1), .wordlist li:nth-child(5) {
-	color: #e3e3e3;
+	color: #1985c4;
 	
 }
 
 .wordlist li:nth-child(2), .wordlist li:nth-child(4) {
-	color: #c4c4c4;
+	color: #2b9ada;
 	
 }
 
@@ -268,14 +269,22 @@ body.ios #back {
 }
 
 #combos li {
-	color: #fff;
-	  font-size: 20px;
-	  text-align: left;
-	  font-weight: 300;
-	  line-height: 30px;
-	  padding-left: 3%;
+	 color: #fff;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 300;
+  line-height: 30px;
+  padding-left: 3%;
+  border-bottom: 1px solid;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style-type: none;
+  padding: 6px;
+
 	
 }
+
 
 .button.bottom {
 	position: absolute;
