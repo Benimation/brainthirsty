@@ -28,7 +28,7 @@ $.getJSON("json/nouns.json", function(data) {
 	if (combosubject != "") {
 		$("#wordlistone li").css("color", "rgba(0,0,0,0)");
 		$("#wordlistone > li#noun2").html(combosubject);
-		$("#wordlistone > li#noun2").css("color", "#8e8e8e");
+		$("#wordlistone > li#noun2").css("color", "#fff");
 		
 	}
 	  
@@ -107,20 +107,23 @@ $("#wordlisttwo").on("swipedown", function(e) {
     
 });
 
-$("#wordlistone").click(function(e) {
-	scrollwords("nouns");
-    
-});
-
-$("#wordlistone").on("swipeup", function(e) {
-	scrollwords("nouns", "up");
-    
-});
-
-$("#wordlistone").on("swipedown", function(e) {
-	scrollwords("nouns", "down");
-    
-});
+if (combosubject == "") {
+	$("#wordlistone").click(function(e) {
+		scrollwords("nouns");
+		
+	});
+	
+	$("#wordlistone").on("swipeup", function(e) {
+		scrollwords("nouns", "up");
+		
+	});
+	
+	$("#wordlistone").on("swipedown", function(e) {
+		scrollwords("nouns", "down");
+		
+	});
+	
+}
 
 /*var hammertime = new Hammer(document.getElementById("wordlisttwo"));
 hammertime.on("swipe", function(ev) {
@@ -149,7 +152,7 @@ $("#savecombo").click(function(e) {
 function displaycombos() {
 	$("#combos").empty();
 	$.each(savedcombos, function(key, val) {
-		$("#combos").append("<li>" + val + "</li>");
+		$("#combos").append('<li>' + val + '<span id="saved' + key + '"><i class="fa fa-pencil"></i></span></li>');
 		
 	});
 	
