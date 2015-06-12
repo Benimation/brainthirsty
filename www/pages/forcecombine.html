@@ -152,7 +152,7 @@ $("#savecombo").click(function(e) {
 function displaycombos() {
 	$("#combos").empty();
 	$.each(savedcombos, function(key, val) {
-		$("#combos").append("<li>" + val + "</li>");
+		$("#combos").append('<li>' + val + '<span id="saved' + key + '"><i class="fa fa-pencil"></i></span></li>');
 		
 	});
 	
