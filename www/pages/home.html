@@ -1,5 +1,5 @@
 <div id="textcontainer">
-	<textarea rows="3" cols="50" class="input" id="combosubject" placeholder="Vul hier je onderwerp in|"></textarea>
+	<textarea rows="3" cols="50" class="input" id="combosubject" placeholder="Vul hier je onderwerp in"></textarea>
 </div>
 <div class="button" id="withsubject">Bevestigen</div>
 <p class="of">of</p>
@@ -45,7 +45,13 @@ $("#withsubject").click(function(e) {
 var blinkstatus = true;
 blinkinterval = setInterval(function() {
 	if (blinkstatus == true) {
-		$("#combosubject").attr("placeholder", "Vul hier je onderwerp in");
+		if ($(window).width() > 391) {
+			$("#combosubject").attr("placeholder", "Vul hier je onderwerp in");
+			
+		} else {
+			$("#combosubject").attr("placeholder", "Vul hier je onderwerp in_");
+			
+		}
 		blinkstatus = false;
 		
 	} else {
