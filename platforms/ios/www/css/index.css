@@ -369,8 +369,8 @@ textarea {
 font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;	
 }
 
-#combosubject:-webkit-input-placeholder:after {
+#combosubject:-webkit-textarea-placeholder:after {
    content:"|";
-   opacity: 1;
+   opacity: 0.5;
    
 }

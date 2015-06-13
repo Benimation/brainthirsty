@@ -1,5 +1,5 @@
 <div id="textcontainer">
-	<textarea rows="3" cols="50" class="input" id="combosubject" placeholder="Vul hier je onderwerp in"></textarea>
+	<textarea rows="2" cols="50" class="input" id="combosubject" placeholder="Vul hier je onderwerp in"></textarea>
 </div>
 <div class="button" id="withsubject">Bevestigen</div>
 <p class="of">of</p>
@@ -61,4 +61,16 @@ blinkinterval = setInterval(function() {
 	}
 	
 }, 500);
+
+// input height
+$("#combosubject").focus(function(e) {
+	$(this).attr("rows", "1");
+	$(this).css("margin-bottom", "0");
+    
+});
+$("#combosubject").focusout(function(e) {
+	$(this).attr("rows", "3");
+	$(this).css("margin-bottom", "30px");
+    
+});
 </script>
