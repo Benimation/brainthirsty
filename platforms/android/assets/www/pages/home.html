@@ -40,4 +40,19 @@ $("#withsubject").click(function(e) {
 	}
 	
 });
+
+// blink
+var blinkstatus = true;
+blinkinterval = setInterval(function() {
+	if (blinkstatus == true) {
+		$("#combosubject").attr("placeholder", "Vul hier je onderwerp in");
+		blinkstatus = false;
+		
+	} else {
+		$("#combosubject").attr("placeholder", "Vul hier je onderwerp in|");
+		blinkstatus = true;
+		
+	}
+	
+}, 500);
 </script>

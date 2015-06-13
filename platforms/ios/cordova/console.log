@@ -386,3 +386,17 @@ To disable web storage backup to iCloud, set the BackupWebStorage preference to 
 
 2015-06-04 15:04:10.620 Brainthirsty[91925:727262] Resetting plugins due to page load.
 2015-06-04 15:04:10.680 Brainthirsty[91925:727262] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/A9D5846E-BF0E-4CB3-B68F-118AB905DA53/Brainthirsty.app/www/index.html
+2015-06-13 09:21:37.508 Brainthirsty[3677:15131] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Data/Application/944E4D96-B5A8-4CB2-9484-EBAB9F67CF91/Library/Cookies/Cookies.binarycookies
+2015-06-13 09:21:37.809 Brainthirsty[3677:15131] Apache Cordova native platform version 3.8.0 is starting.
+2015-06-13 09:21:37.810 Brainthirsty[3677:15131] Multi-tasking -> Device: YES, App: YES
+2015-06-13 09:21:37.823 Brainthirsty[3677:15131] Unlimited access to network resources
+2015-06-13 09:21:37.831 Brainthirsty[3677:15131] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-13 09:21:38.306 Brainthirsty[3677:15131] Resetting plugins due to page load.
+2015-06-13 09:21:38.655 Brainthirsty[3677:15131] Finished load of: file:///Users/Benimation/Library/Developer/CoreSimulator/Devices/F5501647-B1A8-4203-B895-0946CE86D1F3/data/Containers/Bundle/Application/294BCCEE-AA91-4A68-B032-4A453931AC9A/Brainthirsty.app/www/index.html
