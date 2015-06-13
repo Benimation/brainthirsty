@@ -368,9 +368,3 @@ body.ios #back {
 textarea {
 font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;	
 }
-
-#combosubject:-webkit-textarea-placeholder:after {
-   content:"|";
-   opacity: 0.5;
-   
-}
