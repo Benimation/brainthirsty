@@ -65,11 +65,6 @@ var app = {
 
 
 
-// connectie grote boze buitenwereld
-$.getJSON("http://benimation.nl/brainthirsty/gettest.php?test=jamuder", function(data) {
-	//alert(data);
-	
-});
 
 
 
@@ -154,18 +149,40 @@ $("#menu").click(function(e) {
     
 });
 
-/* barcode scan
-cordova.plugins.barcodeScanner.scan(
-	function (result) {
+/* function scanQR() {
+	cordova.plugins.barcodeScanner.scan(
+		function (result) {
+			alert("We got a barcode\n" +
+				  "Result: " + result.text + "\n" +
+				  "Format: " + result.format + "\n" +
+				  "Cancelled: " + result.cancelled);
+				  
+		}, 
+		function (error) {
+			alert("Scanning failed: " + error);
+			
+		}
+	);
+	
+} */
+
+function scanQR() {
+	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
+	
+	scanner.scan(function (result) {
 		alert("We got a barcode\n" +
-			  "Result: " + result.text + "\n" +
-			  "Format: " + result.format + "\n" +
-			  "Cancelled: " + result.cancelled);
+		"Result: " + result.text + "\n" +
+		"Format: " + result.format + "\n" +
+		"Cancelled: " + result.cancelled);
+		
 	}, 
 	function (error) {
 		alert("Scanning failed: " + error);
+		
 	}
-); */
+	);
+	
+}
 
 
 

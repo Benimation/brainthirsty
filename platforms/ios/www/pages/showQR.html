@@ -2,25 +2,29 @@
 
 <p class="big">Verbind met anderen</p>
 
-<img id="QR" src="img/QR.svg" />
+<img id="QR" src="" />
 
 <div id="cam"></div>
 
 <script>
 //cordova.plugins.camerapreview.startCamera({x: 100, y: 100, width: 200, height:200}, "back", false, false, false);
 
-/*video = document.getElementById("webcam");
+$.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=twaalf", function(data) {
+	$("#QR").attr("src", "http://api.qrserver.com/v1/create-qr-code/?data=ownid" + data[0]);
+	
+});
 
-	navigator.webkitGetUserMedia({video: true, audio: false}, function(stream) {
-		video.src = window.webkitURL.createObjectURL(stream);
-		setTimeout(function() { $("#webcam").offset({ top: ($("#webcam").height()*0.5 - $("body").height()*0.5) * -1}) }, 5000);
-		
-	}, function(err) {
-		console.log("Stream faalt");
-			
-	}); */
-	
-	
+
+
+// start scan
+$("#cam").click(function(e) {
+	scanQR();
+    
+});
+
+
+
+// buttons
 $("#cam").click(function(e) {
 	$("#container").css("opacity", "0");
 	
