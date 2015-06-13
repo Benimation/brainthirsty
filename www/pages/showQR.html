@@ -16,6 +16,14 @@ $.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=twaalf",
 
 
 
+// start scan
+$("#cam").click(function(e) {
+	scanQR();
+    
+});
+
+
+
 // buttons
 $("#cam").click(function(e) {
 	$("#container").css("opacity", "0");
