@@ -30,6 +30,9 @@ $.getJSON("json/nouns.json", function(data) {
 		$("#wordlistone > li#noun2").html(combosubject);
 		$("#wordlistone > li#noun2").css("color", "#fff");
 		
+	} else {
+		scrollwords("nouns", "down");
+		
 	}
 	  
 });
@@ -39,6 +42,8 @@ $.getJSON("json/verbs.json", function(data) {
 		$("#wordlisttwo").append("<li id='noun" + key + "'>" + val + "</li>");
 		
 	});
+	
+	scrollwords("verbs", "up");
 	  
 });
 
