@@ -182,7 +182,12 @@ function editcombos() {
 		console.log("clicked");
 		$("#combos > li > #saved" + key).click(function(e) {
 			console.log("clicked");
-			savedcombos[key] = prompt("Verander hier de tekst", val);
+			var theedit = prompt("Verander hier de tekst", val);
+			if (theedit != "" && theedit != null) {
+				savedcombos[key] = theedit;
+				
+			}
+			
 			displaycombos();
 			
 		});
