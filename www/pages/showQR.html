@@ -9,7 +9,14 @@
 <script>
 //cordova.plugins.camerapreview.startCamera({x: 100, y: 100, width: 200, height:200}, "back", false, false, false);
 
-$.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=twaalf", function(data) {
+var thecombos = "";
+
+$.each(savedcombos, function(key, val) {
+	thecombos += val.replace(/;/g , "") + ";";
+	
+});
+
+$.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=" + encodeURIComponent(thecombos), function(data) {
 	$("#QR").attr("src", "http://api.qrserver.com/v1/create-qr-code/?data=ownid" + data[0]);
 	
 });

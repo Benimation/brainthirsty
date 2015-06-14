@@ -30,6 +30,9 @@ $.getJSON("json/nouns.json", function(data) {
 		$("#wordlistone > li#noun2").html(combosubject);
 		$("#wordlistone > li#noun2").css("color", "#fff");
 		
+	} else {
+		scrollwords("nouns", "down");
+		
 	}
 	  
 });
@@ -39,6 +42,8 @@ $.getJSON("json/verbs.json", function(data) {
 		$("#wordlisttwo").append("<li id='noun" + key + "'>" + val + "</li>");
 		
 	});
+	
+	scrollwords("verbs", "up");
 	  
 });
 
@@ -125,19 +130,12 @@ if (combosubject == "") {
 	
 }
 
-/*var hammertime = new Hammer(document.getElementById("wordlisttwo"));
-hammertime.on("swipe", function(ev) {
-	scrollwords("verbs");
-    console.log(ev);
-	
-});*/
-
 
 
 // buttons
 displaycombos();
 $("#savecombo").click(function(e) {
-	if (savedcombos.length <= 4) {
+	if (savedcombos.length <= 3) {
 		savedcombos.push($("#wordlistone > li:nth-child(3)").text() + " " + $("#wordlisttwo > li:nth-child(3)").text());
 		
 		displaycombos();
@@ -153,6 +151,7 @@ function displaycombos() {
 	$("#combos").empty();
 	$.each(savedcombos, function(key, val) {
 		$("#combos").append('<li>' + val + '<span id="saved' + key + '"><i class="fa fa-pencil"></i></span></li>');
+		editcombos();
 		
 	});
 	
@@ -181,6 +180,28 @@ $("#back").click(function(e) {
 	}, 1000);
 	
 });
+
+// tekst aanpassen
+function editcombos() {
+	$.each(savedcombos, function(key, val) {
+		console.log("clicked");
+		$("#combos > li > #saved" + key).click(function(e) {
+			console.log("clicked");
+			var theedit = prompt("Verander hier de tekst", val);
+			if (theedit != "" && theedit != null) {
+				savedcombos[key] = theedit;
+				
+			}
+			
+			displaycombos();
+			
+		});
+		
+	});
+	
+}
+
+
 /*if (deviceType == "iOS") {
 	$("#back").addClass("backios");
 	
