@@ -5,9 +5,44 @@
 <p id="idea">Hier komt het eerste idee te staan.</p>
 </div>
 
-<div class="button" id="postcombos">Volgende</div>
+<div class="button" id="nextidea">Volgende</div>
 
 <script>
+var allideas = [];
+var currentidea = 1;
+
+$.getJSON("http://benimation.nl/brainthirsty/getcombos.php?ownid=" + ownid + "&otherid=" + otherid, function(data) {
+	console.log(data);
+	$.each(data, function(key, val) {
+		$.each(val[0].slice(0,-1).split(";"), function(id, text) {
+			allideas.push(text);
+			
+		});
+		
+	});
+	
+	$("#idea").html(allideas[0]);
+	$("#ideas > .big").html("Idee " + currentidea);
+	
+});
+
+
+
+// buttons
+$("#nextidea").click(function(e) {
+	if (currentidea < allideas.length) {
+		currentidea++;
+		
+	} else {
+		currentidea = 1;
+		
+	}
+	
+	$("#idea").html(allideas[currentidea - 1]);
+	$("#ideas > .big").html("Idee " + currentidea);
+	
+    
+});
 
 $("#back").click(function(e) {
 	$("#container").css("opacity", "0");

@@ -10,6 +10,8 @@
 //cordova.plugins.camerapreview.startCamera({x: 100, y: 100, width: 200, height:200}, "back", false, false, false);
 
 var thecombos = "";
+var ownid;
+var otherid;
 
 $.each(savedcombos, function(key, val) {
 	thecombos += val.replace(/;/g , "") + ";";
@@ -17,7 +19,8 @@ $.each(savedcombos, function(key, val) {
 });
 
 $.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=" + encodeURIComponent(thecombos), function(data) {
-	$("#QR").attr("src", "http://api.qrserver.com/v1/create-qr-code/?data=ownid" + data[0]);
+	ownid = data[0];
+	$("#QR").attr("src", "http://api.qrserver.com/v1/create-qr-code/?data=ownid" + ownid);
 	
 });
 
@@ -25,7 +28,8 @@ $.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=" + enco
 
 // start scan
 $("#cam").click(function(e) {
-	scanQR();
+	//scanQR();
+	otherid = 1;
     
 });
 
