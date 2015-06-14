@@ -31,7 +31,7 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#23a3ed;
+    background-color:#fff;
     background-attachment:fixed;
     font-family: "lato", 'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
@@ -121,7 +121,7 @@ h1 {
 
 #topbar {
 	height: 48px;
-	background-color: #23a3ed;
+	background-color: #0f4868;
 	font-size: 24px;
 	color: #fff;
 	text-align: center;
@@ -168,19 +168,19 @@ body.ios #back {
 }
 
 .button {
-	color: #23a3ed;
-	background-color: #fff;
-	padding: 20px 3%;
-	font-size: 20px;
-	display: inline-block;
-	width: 94%;
-	font-weight: 400;
-	background-image: url(../img/arrowright.png);
-	background-repeat: no-repeat;
-	background-position-x: right;
-	background-size: contain;
-	text-align: left;
-	cursor: pointer;
+	color: #fff;
+  background-color: #23a3ed;
+  padding: 20px 3%;
+  font-size: 20px;
+  display: inline-block;
+  width: 94%;
+  font-weight: 300;
+  background-image: url(../img/arrowright.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: contain;
+  text-align: center;
+  cursor: pointer;
 	
 }
 
@@ -195,7 +195,7 @@ body.ios #back {
 	  color: #fff;
 	  display: block;
 	  font-size: 20px;
-	  text-align: left;
+	  text-align: center;
 	  padding-left: 3%;
 	  font-weight: 300;
 		
@@ -235,14 +235,14 @@ body.ios #back {
 
 .wordlist {
 	  display: inline-block;
-  width: 49.5%;
+  width: 49.1%;
   list-style: none;
-  background-color: #1a7ab2;
+  background-color: #fff;
   margin: 0;
   padding: 6px 0;
   font-size: 20px;
   line-height: 35px;
-  color: #fff;
+  color: #0f4868;
   text-align: left;
   font-weight: 300;
 	
@@ -254,14 +254,16 @@ body.ios #back {
 }
 
 .wordlist li:nth-child(1), .wordlist li:nth-child(5) {
-	color: #1984c3;
+	color: #b8cfe4;
 	
 }
 
 .wordlist li:nth-child(2), .wordlist li:nth-child(4) {
-	color: #2b9ada;
+	color: #889fb3;
 	
 }
+
+#wordlistone{ border-right: 1px solid;}
 
 #combos {
 	margin: 6px 0;
@@ -269,13 +271,13 @@ body.ios #back {
 }
 
 #combos li {
-	 color: #fff;
+	color: #0f4868;
   font-size: 20px;
   text-align: left;
   font-weight: 300;
   line-height: 30px;
   padding-left: 3%;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #a7a7a7;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
