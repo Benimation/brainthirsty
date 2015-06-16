@@ -1,3 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
+#tempnumber {
+	display: block;
+	height: 160px;
+	position: absolute;
+	left: 80px;
+	width: 160px;
+	top: 120px;
+	line-height: 160px;
+	font-size: 8em;
+	color: white;
+	background-color: rgba(0,0,0,0.65);
+	
+}

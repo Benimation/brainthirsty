@@ -170,7 +170,7 @@ body.ios #back {
 .button {
 	color: #fff;
   background-color: #23a3ed;
-  padding: 20px 3%;
+  padding: 15px 3%;
   font-size: 20px;
   display: inline-block;
   width: 94%;
@@ -220,7 +220,7 @@ body.ios #back {
   color: #fff;
   height: auto;
   text-align: left;
-  font-size: 55px;
+  font-size: 50px;
   border-radius: 0;
   background: transparent;
   letter-spacing: 3px;
@@ -300,6 +300,9 @@ body.ios #back {
 	height: 180px;
 	width: 85%;
 	margin: 7.5%;
+	color: white;
+	line-height: 180px;
+	font-size: 1.5em;
 	
 }
 
