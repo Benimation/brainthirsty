@@ -3,8 +3,9 @@
 <p class="big">Verbind met anderen</p>
 
 <img id="QR" src="" />
+<div id="tempnumber"></div>
 
-<div id="cam"></div>
+<div id="cam">Vul het nummer van de ander in</div>
 
 <script>
 //cordova.plugins.camerapreview.startCamera({x: 100, y: 100, width: 200, height:200}, "back", false, false, false);
@@ -21,32 +22,51 @@ $.each(savedcombos, function(key, val) {
 $.getJSON("http://benimation.nl/brainthirsty/savecombos.php?savedcombos=" + encodeURIComponent(thecombos), function(data) {
 	ownid = data[0];
 	$("#QR").attr("src", "http://api.qrserver.com/v1/create-qr-code/?data=ownid" + ownid);
+	$("#tempnumber").html(ownid);
 	
 });
 
 
 
-// start scan
-$("#cam").click(function(e) {
-	//scanQR();
-	otherid = 1;
-    
-});
+// other check
+function checkother() {
+	$.getJSON("http://www.benimation.nl/brainthirsty/getother.php?ownid=" + ownid, function(data) {
+		if (data[0] != "") {
+			otherid = data[0];
+			loadbrainwriting();
+			clearInterval(checkotherinterval);
+			
+		}
+		
+	});
+	
+}
+
+var checkotherinterval = setInterval(checkother, 500);
 
 
 
 // buttons
 $("#cam").click(function(e) {
+	otherid = prompt("Nummer van de ander");
+	
 	$("#container").css("opacity", "0");
 	
-    setTimeout(function() {
+	$.getJSON("http://benimation.nl/brainthirsty/link.php?ownid=" + ownid + "&otherid=" + otherid, function(data) {
+		console.log(data);
+		
+	});
+	
+});
+function loadbrainwriting() {
+	setTimeout(function() {
 		$("#container").load("pages/brainwriting.html", function() {
 			$("#container").css("opacity", "1");
 			
 		});
 	}, 1000);
 	
-});
+}
 
 $("#back").click(function(e) {
 	$("#container").css("opacity", "0");
