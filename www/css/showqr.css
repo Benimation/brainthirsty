@@ -26,6 +26,13 @@
 	font-weight: 300;
 	color: #0f4868;
 	font-size: 18px;
-	margin-bottom: 0;
+	margin-bottom: 24px;
+	
+}
+
+#cam {
+	position: absolute;
+	bottom: 0;
+	left: 0;
 	
 }

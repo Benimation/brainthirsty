@@ -65,6 +65,8 @@ function blinkcursor() {
 	
 }
 
+
+
 // input height
 $("#combosubject").focus(function(e) {
 	$(this).attr("rows", "1");
@@ -78,6 +80,13 @@ $("#combosubject").focusout(function(e) {
 	$(this).css("margin-bottom", "30px");
 	$("#combosubject").attr("placeholder", "Vul hier je onderwerp in");
 	blinkinterval = setInterval(blinkcursor, 500);
+    
+});
+
+
+// startcontainer height
+$(document).ready(function(e) {
+	$("#startcontainer").height($(window).height() - $("#topbar").height());
     
 });
 </script>

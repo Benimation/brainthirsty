@@ -19,14 +19,14 @@ var nouns = "";
 var verbs = "";
 $.getJSON("json/nouns.json", function(data) {
 	$.each(data[0], function(key, val) {
-		$("#wordlistone").append("<li id='noun'" + key + "'>" + val + "</li>");
+		$("#wordlistone").append("<li id='noun'>" + val + "</li>");
 		
 	});
 	
 	if (combosubject != "") {
 		$("#wordlistone li").css("color", "rgba(0,0,0,0)");
-		$("#wordlistone > li#noun2").html(combosubject);
-		$("#wordlistone > li#noun2").css("color", "#fff");
+		$("#wordlistone > li:nth-child(3)").html(combosubject);
+		$("#wordlistone > li:nth-child(3)").css("color", "#0f4868");
 		
 	} else {
 		scrollwords("nouns", "down");
@@ -184,9 +184,7 @@ $("#back").click(function(e) {
 // tekst aanpassen
 function editcombos() {
 	$.each(savedcombos, function(key, val) {
-		console.log("clicked");
 		$("#combos > li > #saved" + key).click(function(e) {
-			console.log("clicked");
 			var theedit = prompt("Verander hier de tekst", val);
 			if (theedit != "" && theedit != null) {
 				savedcombos[key] = theedit;
