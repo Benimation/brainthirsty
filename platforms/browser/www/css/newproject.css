@@ -5,7 +5,8 @@
 	width: 100%;
 	height: 100%;
 	background-image:url("../img/homeback.png");	
-	background-size: contain;
+	background-size: cover;
+	background-repeat:no-repeat;
 }
 
 #textcontainer{
