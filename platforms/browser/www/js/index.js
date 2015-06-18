@@ -165,6 +165,7 @@ $("#menu").click(function(e) {
 	);
 	
 } */
+var scanresult = "";
 
 function scanQR() {
 	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
@@ -176,7 +177,7 @@ function scanQR() {
 		"Cancelled: " + result.cancelled);*/
 		
 		if (!result.cancelled) {
-			return result.text;
+			scanresult = result.text;
 			
 		} else {
 			return false;

@@ -35,6 +35,14 @@ function checkother() {
 			loadbrainwriting();
 			clearInterval(checkotherinterval);
 			
+		} else if (scanresult != "") {
+			otherid = scanresult.slice(5);
+			
+			$.getJSON("http://benimation.nl/brainthirsty/link.php?ownid=" + ownid + "&otherid=" + otherid, function(data) {
+				loadbrainwriting();
+				
+			});
+			
 		}
 		
 	});
@@ -56,7 +64,7 @@ $("#cam").click(function(e) {
 		
 	});*/
 	
-	var scanresult = scanQR();
+	scanresult = scanQR();
 	
 });
 function loadbrainwriting() {
