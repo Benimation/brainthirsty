@@ -48,14 +48,16 @@ var checkotherinterval = setInterval(checkother, 500);
 
 // buttons
 $("#cam").click(function(e) {
-	otherid = prompt("Nummer van de ander");
+	/*otherid = prompt("Nummer van de ander");
 	
 	$("#container").css("opacity", "0");
 	
 	$.getJSON("http://benimation.nl/brainthirsty/link.php?ownid=" + ownid + "&otherid=" + otherid, function(data) {
 		console.log(data);
 		
-	});
+	});*/
+	
+	var scanresult = scanQR();
 	
 });
 function loadbrainwriting() {
