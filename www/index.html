@@ -44,6 +44,25 @@
         
         <script type="text/javascript" src="cordova.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+		(function($) {
+			$.fn.randomize = function(childElem) {
+			  return this.each(function() {
+				  var $this = $(this);
+				  var elems = $this.children(childElem);
+			
+				  elems.sort(function() { return (Math.round(Math.random())-0.5); });  
+			
+				  $this.detach(childElem);  
+			
+				  for(var i=0; i < elems.length; i++)
+					$this.append(elems[i]);      
+			
+			  });    
+			}
+		})(jQuery);
+		
+		</script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
         <script type="text/javascript" src="js/scrollupdown.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

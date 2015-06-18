@@ -7,12 +7,7 @@
         "files": {
             "framework": {
                 "parents": {
-                    "CoreLocation.framework": [
-                        {
-                            "xml": false,
-                            "count": 1
-                        }
-                    ],
+                    "CoreLocation.framework": [],
                     "libiconv.dylib": [
                         {
                             "xml": false,
@@ -55,10 +50,6 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<feature name=\"Geolocation\"><param name=\"ios-package\" value=\"CDVLocation\" /></feature>",
-                            "count": 1
-                        },
-                        {
                             "xml": "<feature name=\"BarcodeScanner\"><param name=\"ios-package\" value=\"CDVBarcodeScanner\" /></feature>",
                             "count": 1
                         },
@@ -71,27 +62,19 @@
             },
             "*-Info.plist": {
                 "parents": {
-                    "NSLocationWhenInUseUsageDescription": [
-                        {
-                            "xml": "<string />",
-                            "count": 1
-                        }
-                    ]
+                    "NSLocationWhenInUseUsageDescription": []
                 }
             }
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
-        "org.apache.cordova.geolocation": {
-            "PACKAGE_NAME": "com.phonegap.helloworld"
-        },
         "com.phonegap.plugins.barcodescanner": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         },
         "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.phonegap.helloworld"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.helloworld"
         }
     },

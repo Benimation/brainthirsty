@@ -19,11 +19,9 @@ var nouns = "";
 var verbs = "";
 $.getJSON("json/nouns.json", function(data) {
 	$.each(data[0], function(key, val) {
-		$("#wordlistone").append("<li id='noun" + key + "'>" + val + "</li>");
+		$("#wordlistone").append("<li id='noun'" + key + "'>" + val + "</li>");
 		
 	});
-	
-	console.log(combosubject);
 	
 	if (combosubject != "") {
 		$("#wordlistone li").css("color", "rgba(0,0,0,0)");
@@ -32,6 +30,7 @@ $.getJSON("json/nouns.json", function(data) {
 		
 	} else {
 		scrollwords("nouns", "down");
+		$("#wordlistone").randomize("li#noun");
 		
 	}
 	  
@@ -39,11 +38,12 @@ $.getJSON("json/nouns.json", function(data) {
 
 $.getJSON("json/verbs.json", function(data) {
 	$.each(data[0], function(key, val) {
-		$("#wordlisttwo").append("<li id='noun" + key + "'>" + val + "</li>");
+		$("#wordlisttwo").append("<li id='verb'" + key + "'>" + val + "</li>");
 		
 	});
 	
 	scrollwords("verbs", "up");
+	$("#wordlisttwo").randomize("li#verb");
 	  
 });
 
